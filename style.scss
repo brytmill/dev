@@ -73,8 +73,17 @@ footer {
 	width: 100%;
 	border-radius: 0;
 	z-index: 999;
+	background: #fff;
+	border: none;
 	a {
 		font-size: 2em;
+		background: #fff;
+		color: #000;
+		transition: all .3s ease;
+		&:hover {
+			background: #000 !important;
+			color: #fff !important;
+		}
 	}
 }
 

@@ -59,9 +59,17 @@ footer {
   position: fixed;
   width: 100%;
   border-radius: 0;
-  z-index: 999; }
+  z-index: 999;
+  background: #fff;
+  border: none; }
   .navbar a {
-    font-size: 2em; }
+    font-size: 2em;
+    background: #fff;
+    color: #000;
+    transition: all .3s ease; }
+    .navbar a:hover {
+      background: #000 !important;
+      color: #fff !important; }
 
 .more {
   color: #fff;
