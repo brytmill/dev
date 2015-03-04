@@ -100,10 +100,14 @@ footer {
 
 .btn-primary, .btn-default {
 	border-radius: 0;
-	border: none;
-	text-transform: uppercase;
+	border: 1px solid #fff;
 	padding: 10px 20px;
 	font-size: 2em;
+	background: none;
+	&:hover {
+		background: #fff;
+		color: #333;
+	}
 }
 
 #intro {
