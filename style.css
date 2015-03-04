@@ -39,6 +39,8 @@ section {
   padding-bottom: 80px;
   position: relative;
   background: url("images/footer_lodyas.png"); }
+  section .container {
+    text-align: center; }
 
 footer {
   background: #337ab7;
@@ -90,12 +92,21 @@ footer {
     background: #fff;
     color: #333; }
 
-#intro {
-  background: top center no-repeat url("http://payload93.cargocollective.com/1/8/282864/4164574/DSC_0476%20copycrop_900.jpg");
+#page-head {
+  background: none;
   background-size: 100%;
   background-position: 50%;
-  min-height: 600px;
-  padding-top: 200px; }
+  padding-top: 110px; }
+  #page-head p {
+    color: #fff; }
+
+/* Home Page */
+#intro {
+  background: none;
+  background-size: 100%;
+  background-position: 50%;
+  min-height: 800px;
+  padding-top: 280px; }
   #intro p {
     color: #fff; }
   #intro i {
@@ -142,9 +153,9 @@ footer {
       border: none; }
 
 /* Portfolio Page */
-#portfolio-grid {
+#portfolio #portfolio-grid {
   padding-top: 40px; }
-  #portfolio-grid button {
+  #portfolio #portfolio-grid button {
     background: none;
     border: 1px solid #fff;
     color: #fff;
@@ -152,18 +163,27 @@ footer {
     font-size: 2em;
     margin-right: 10px;
     transition: background-color .2s ease; }
-    #portfolio-grid button:hover {
+    #portfolio #portfolio-grid button:hover {
       background: #fff;
       color: #333; }
-  #portfolio-grid figure {
+  #portfolio #portfolio-grid figure {
     overflow: hidden;
     margin-bottom: 40px; }
-  #portfolio-grid .active {
+  #portfolio #portfolio-grid .active {
     background: #fff;
     color: #333; }
-  #portfolio-grid .filter-options {
+  #portfolio #portfolio-grid .filter-options {
     text-align: center; }
-  #portfolio-grid #grid {
+  #portfolio #portfolio-grid #grid {
     margin-top: 40px; }
+
+/* Services */
+#services section {
+  padding-bottom: 0; }
+  #services section img {
+    margin: auto;
+    padding-top: 40px; }
+#services #page-head {
+  padding-bottom: 80px; }
 
 /*# sourceMappingURL=style.css.map */
