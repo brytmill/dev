@@ -20,6 +20,11 @@ p {
 
 header {
   background: #fff; }
+  header .logo {
+    position: absolute;
+    margin-left: 50%;
+    left: -25px;
+    max-height: 50px; }
 
 a {
   font-weight: 400;
@@ -66,7 +71,7 @@ footer {
     font-size: 2em;
     background: #fff;
     color: #000;
-    transition: all .3s ease; }
+    transition: all .33s ease; }
     .navbar a:hover {
       background: #000 !important;
       color: #fff !important; }
@@ -132,5 +137,30 @@ footer {
         font-weight: 700; }
     #home-contact .modal-content .modal-footer {
       border: none; }
+
+/* Portfolio Page */
+#portfolio-grid {
+  padding-top: 40px; }
+  #portfolio-grid button {
+    background: none;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 2em;
+    margin-right: 10px;
+    transition: background-color .2s ease; }
+    #portfolio-grid button:hover {
+      background: #fff;
+      color: #333; }
+  #portfolio-grid figure {
+    overflow: hidden;
+    margin-bottom: 40px; }
+  #portfolio-grid .active {
+    background: #fff;
+    color: #333; }
+  #portfolio-grid .filter-options {
+    text-align: center; }
+  #portfolio-grid #grid {
+    margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */

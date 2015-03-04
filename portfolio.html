@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>BRYTDESIGNS . Responsive Web Design</title>
+	<meta name="robots" content="nofollow, noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="modernizr-latest.js"></script>
+<script src="jquery.shuffle.js"></script>
+<script src="jquery.ba-throttle-debounce.min.js"></script>
+</head>
+<body>
+	<header>
+		<nav class="navbar navbar-default">
+		  <div class="container">
+		    <!-- Brand and toggle get grouped for better mobile display -->
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		    </div>
+
+		    <!-- Collect the nav links, forms, and other content for toggling -->
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="#">Home</a></li>
+		        <li><a href="portfolio.html">Portfolio</a></li>
+		        <li><a href="#">Services</a></li>
+		      </ul>
+		      <div class="text-center">
+		      	<a href="#"><img src="images/logo-bw.png" alt="" class="img-responsive logo"></a>
+		      </div>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">About</a></li>
+		        <li><a href="#">Blog</a></li>
+		        <li><a href="#">Contact</a></li>
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
+	</header>
+	<section id="page-head" class="container-fluid inverse">
+		<div class="container">
+			<h1 class="text-center">Our Portfolio</h1>
+			<p class="text-center">We're proud of what we've done.</p>
+		</div>
+	</section>
+	<section id="portfolio-grid">
+		<div class="container">
+			<div class="filter-options">
+	          <button class="active" data-group="all">All</button>
+	          <button class="" data-group="web-design">Web Design</button>
+	          <button class="" data-group="graphic-design">Graphic Design</button>
+	          <button class="" data-group="maintenance">Maintenance</button>
+	        </div>
+				<div class="row" id="grid">
+				  <figure class="col-md-3 picture-item" data-groups='["maintenance"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center">Maintenance</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Tennis</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">iMac</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item picture-item--h2" data-groups='["graphic-design"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Master Chief</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["maintenance"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Baseball</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Tennis</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">iMac</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item picture-item--h2" data-groups='["graphic-design"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Master Chief</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["maintenance"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Baseball</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Tennis</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item" data-groups='["web-design","3d"]'>
+				    <img src="http://placehold.it/293x155" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">iMac</figcaption class="text-center">
+				    </div>
+				  </figure>
+				  <figure class="col-md-3 picture-item picture-item--h2" data-groups='["graphic-design"]'>
+				    <img src="http://placehold.it/293x155.png" height="155" width="293" />
+				    <div class="picture-item__details">
+				      <figcaption class="text-center" class="picture-item__title">Master Chief</figcaption class="text-center">
+				    </div>
+				  </figure>
+				</div>
+		</div>
+	</section>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>BRYT DESIGNS</li>
+						<li>Home</li>
+						<li>Portfolio</li>
+						<li>Services</li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Background</li>
+						<li>About</li>
+						<li>Clients</li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Reach Out</li>
+						<li>Contact Us</li>
+						<li>GitHub</li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="col-md-3">
+					<ul class="list-unstyled">
+						<li>Follow</li>
+						<li>Facebook</li>
+						<li>Twitter</li>
+						<li>Google+</li>
+						<li>Dribbble</li>
+					</ul>
+				</div>
+			</div>
+			<div class="copy">
+				<img src="" alt="">
+				<p>&copy; BRYT DESIGNS 2015. All Rights Reserved.</p>
+			</div>
+		</div>
+	</footer>
+
+
+    <script>
+		  var shuffleme = (function( $ ) {
+		  'use strict';
+
+		  var $grid = $('#grid'),
+		      $filterOptions = $('.filter-options'),
+		      $sizer = $grid.find('.shuffle_sizer'),
+
+		  init = function() {
+
+		    // None of these need to be executed synchronously
+		    setTimeout(function() {
+		      listen();
+		      setupFilters();
+		    }, 100);
+
+		    // instantiate the plugin
+		    $grid.shuffle({
+		      itemSelector: '[class*="col-"]',
+		      sizer: $sizer    
+		    });
+		  },
+
+		  // Set up button clicks
+		  setupFilters = function() {
+		    var $btns = $filterOptions.children();
+		    $btns.on('click', function() {
+		      var $this = $(this),
+		          isActive = $this.hasClass( 'active' ),
+		          group = isActive ? 'all' : $this.data('group');
+
+		      // Hide current label, show current label in title
+		      if ( !isActive ) {
+		        $('.filter-options .active').removeClass('active');
+		      }
+
+		      $this.toggleClass('active');
+
+		      // Filter elements
+		      $grid.shuffle( 'shuffle', group );
+		    });
+
+		    $btns = null;
+		  },
+
+		  // Re layout shuffle when images load. This is only needed
+		  // below 768 pixels because the .picture-item height is auto and therefore
+		  // the height of the picture-item is dependent on the image
+		  // I recommend using imagesloaded to determine when an image is loaded
+		  // but that doesn't support IE7
+		  listen = function() {
+		    var debouncedLayout = $.throttle( 300, function() {
+		      $grid.shuffle('update');
+		    });
+
+		    // Get all images inside shuffle
+		    $grid.find('img').each(function() {
+		      var proxyImage;
+
+		      // Image already loaded
+		      if ( this.complete && this.naturalWidth !== undefined ) {
+		        return;
+		      }
+
+		      // If none of the checks above matched, simulate loading on detached element.
+		      proxyImage = new Image();
+		      $( proxyImage ).on('load', function() {
+		        $(this).off('load');
+		        debouncedLayout();
+		      });
+
+		      proxyImage.src = this.src;
+		    });
+
+		    // Because this method doesn't seem to be perfect.
+		    setTimeout(function() {
+		      debouncedLayout();
+		    }, 500);
+		  };      
+
+		  return {
+		    init: init
+		  };
+		}( jQuery ));
+		$(document).ready(function() {
+		  shuffleme.init();
+		});
+    </script>
+
+</body>
+</html>

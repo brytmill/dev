@@ -23,6 +23,12 @@ p {
 
 header {
 	background: #fff;
+	.logo {
+		position: absolute;
+		margin-left: 50%;
+		left: -25px;
+		max-height: 50px;
+	}
 }
 
 a {
@@ -79,7 +85,7 @@ footer {
 		font-size: 2em;
 		background: #fff;
 		color: #000;
-		transition: all .3s ease;
+		transition: all .33s ease;
 		&:hover {
 			background: #000 !important;
 			color: #fff !important;
@@ -169,5 +175,42 @@ footer {
 		.modal-footer {
 			border: none;
 		}
+	}
+}
+
+/* Portfolio Page */
+
+.page-head {
+
+}
+
+#portfolio-grid {
+	padding-top: 40px;
+	button {
+		background: none;
+		border: 1px solid #fff;
+		color: #fff;
+		padding: 10px 20px;
+		font-size: 2em;
+		margin-right: 10px;
+		transition: background-color .2s ease;
+		&:hover {
+			background: #fff;
+			color: #333;
+		}
+	}
+	figure {
+		overflow: hidden;
+		margin-bottom: 40px;
+	}
+	.active {
+		background: #fff;
+		color: #333;
+	}
+	.filter-options {
+		text-align: center;
+	}
+	#grid {
+		margin-top: 40px;
 	}
 }
