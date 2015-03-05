@@ -218,6 +218,36 @@ footer {
 		figure {
 			overflow: hidden;
 			margin-bottom: 40px;
+			position: relative;
+			figcaption {
+				font-size: 2em;
+				em {
+					font-size: 0.75em;
+					font-weight: 300;
+				}
+			}
+			i {
+				padding: 10px;
+				color: #fff;
+				position: absolute;
+				z-index: 999;
+				top: 60px;
+				left: 120px;
+				background: #333;
+				padding: 17px 15px 15px 17px;
+				border-radius: 50%;
+				font-size: 3em;
+				&:hover {
+					background: #444;
+				}
+			}
+			a {
+				opacity: 0;
+				transition: opacity .2s ease;
+			}
+			&:hover > a {
+				opacity: 1;
+			}
 		}
 		.active {
 			background: #fff;
@@ -229,6 +259,9 @@ footer {
 		#grid {
 			margin-top: 40px;
 		}
+	}
+	.btn {
+		margin-top: 40px;
 	}
 }
 

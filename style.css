@@ -168,7 +168,31 @@ footer {
       color: #333; }
   #portfolio #portfolio-grid figure {
     overflow: hidden;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: relative; }
+    #portfolio #portfolio-grid figure figcaption {
+      font-size: 2em; }
+      #portfolio #portfolio-grid figure figcaption em {
+        font-size: 0.75em;
+        font-weight: 300; }
+    #portfolio #portfolio-grid figure i {
+      padding: 10px;
+      color: #fff;
+      position: absolute;
+      z-index: 999;
+      top: 60px;
+      left: 120px;
+      background: #333;
+      padding: 17px 15px 15px 17px;
+      border-radius: 50%;
+      font-size: 3em; }
+      #portfolio #portfolio-grid figure i:hover {
+        background: #444; }
+    #portfolio #portfolio-grid figure a {
+      opacity: 0;
+      transition: opacity .2s ease; }
+    #portfolio #portfolio-grid figure:hover > a {
+      opacity: 1; }
   #portfolio #portfolio-grid .active {
     background: #fff;
     color: #333; }
@@ -176,6 +200,8 @@ footer {
     text-align: center; }
   #portfolio #portfolio-grid #grid {
     margin-top: 40px; }
+#portfolio .btn {
+  margin-top: 40px; }
 
 /* Services */
 #services section {
