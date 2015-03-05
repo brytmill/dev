@@ -99,6 +99,8 @@ footer {
   padding-top: 110px; }
   #page-head p {
     color: #fff; }
+  #page-head h1, #page-head p {
+    text-shadow: 0 1px 3px #000; }
 
 /* Home Page */
 #intro {
@@ -211,5 +213,9 @@ footer {
     padding-top: 40px; }
 #services #page-head {
   padding-bottom: 80px; }
+
+/* Blog */
+#blog .btn {
+  margin-top: 40px; }
 
 /*# sourceMappingURL=style.css.map */

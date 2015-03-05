@@ -121,6 +121,9 @@ footer {
 	p {
 		color: #fff;
 	}
+	h1, p {
+		text-shadow: 0 1px 3px #000;
+	}
 }
 
 /* Home Page */
@@ -277,5 +280,13 @@ footer {
 	}
 	#page-head {
 		padding-bottom: 80px;
+	}
+}
+
+/* Blog */
+
+#blog {
+	.btn {
+		margin-top: 40px;
 	}
 }
