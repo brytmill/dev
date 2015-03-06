@@ -104,11 +104,15 @@ footer {
 .btn-primary, .btn-default {
 	border-radius: 0;
 	border: 1px solid #fff;
+	border-color: #fff;
 	padding: 10px 20px;
 	font-size: 2em;
 	background: none;
-	&:hover {
-		background: #fff;
+	transition: all .2s ease;
+	margin-bottom: 5px;
+	&:hover, &:focus {
+		background-color: #fff;
+		border-color: #fff;
 		color: #333;
 	}
 }
@@ -213,6 +217,7 @@ footer {
 			font-size: 2em;
 			margin-right: 10px;
 			transition: background-color .2s ease;
+			margin-bottom: 5px;
 			&:hover {
 				background: #fff;
 				color: #333;
@@ -280,6 +285,10 @@ footer {
 	}
 	#page-head {
 		padding-bottom: 80px;
+		.btn-primary {
+			text-shadow: none;
+			font-size: 0.75em;
+		}
 	}
 }
 
