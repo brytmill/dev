@@ -48,6 +48,7 @@ section {
 	background: url('images/footer_lodyas.png');
 	.container {
 		text-align: center;
+		position: relative;
 	}
 }
 
@@ -150,8 +151,17 @@ footer {
 }
 
 #home-graphics {
-	img {
+	.desktop {
+		position: relative;
+		z-index: 3;
 		margin: auto;
+	}
+	.carousel {
+		position: absolute;
+		top: 150px;
+		margin-left: 50%;
+		left: -342px;
+		z-index: 2;
 	}
 }
 
