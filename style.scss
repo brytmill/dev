@@ -21,6 +21,14 @@ p {
 	letter-spacing: 0.05em;
 }
 
+input, textarea {
+	font-size: 2.5em;
+	padding: 10px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: #333;
+}
+
 header {
 	background: #fff;
 	.logo {
@@ -45,7 +53,7 @@ section {
 	padding-top: 80px;
 	padding-bottom: 80px;
 	position: relative;
-	background: url('images/footer_lodyas.png');
+	background-color: #333;
 	.container {
 		text-align: center;
 		position: relative;
@@ -307,5 +315,44 @@ footer {
 #blog {
 	.btn {
 		margin-top: 40px;
+	}
+}
+
+/* Contact */
+
+#contact {
+	#page-head {
+		padding-bottom: 0;
+	}
+	.contact-form-head {
+		font-weight: 300;
+		background: #fff;
+		color: #000;
+		text-shadow: none;
+		margin: 0;
+		padding: 20px 40px;
+		line-height: 48px;
+	}
+	.contact-foot-head {
+		font-weight: 300;
+		text-transform: uppercase;
+		text-align: left;
+		padding: 20px 40px;
+		line-height: 60px;
+		background: #fff;
+		color: #333;
+		margin: 0;
+	}
+	.contact-form {
+		background-color: rgba(0,0,0,0.6);
+		padding: 20px 40px;
+	}
+	.contact-bottom-grid {
+		.col-md-4 {
+			background: #000;
+			padding: 0;
+			max-width: 360px;
+			margin-right: 45px;
+		}
 	}
 }
