@@ -1,5 +1,7 @@
+$blue: #4c80c5;
+
 body {
-	background: #222;
+	background: #111;
 	color: #fff;
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-weight: 400;
@@ -61,7 +63,7 @@ section {
 }
 
 footer {
-	background: #337ab7;
+	background: $blue;
 	padding-top: 40px;
 	padding-bottom: 40px;
 	color: #ddd;
@@ -83,7 +85,11 @@ footer {
 }
 
 .inverse {
-	background: #000;
+	background: #f2f2f2;
+	color: #333;
+	.bar {
+		background: #333;
+	}
 }
 
 .navbar {
@@ -110,15 +116,23 @@ footer {
 	font-weight: 700;
 }
 
+.bar {
+	display: block;
+	height: 4px;
+	width: 75px;
+	background-color: #fff;
+	margin: 20px auto;
+}
+
 .btn-primary, .btn-default {
-	border-radius: 0;
-	border: 1px solid #fff;
-	border-color: #fff;
+	border-radius: 20px;
+	color: #fff;
 	padding: 10px 20px;
-	font-size: 2em;
-	background: none;
+	background: $blue;
 	transition: all .2s ease;
 	margin-bottom: 5px;
+	font-weight: 900;
+	text-transform: uppercase;
 	&:hover, &:focus {
 		background-color: #fff;
 		border-color: #fff;
@@ -139,7 +153,7 @@ footer {
 	}
 }
 
-.affiliations {
+#affiliations {
 	.row {
 		margin-top: 60px;
 	}
@@ -156,18 +170,48 @@ footer {
 	background-size: 100%;
 	background-position: 50%;
 	min-height: 800px;
-	padding-top: 320px;
-	h1, p {
-		text-shadow: 0 1px 3px #000;
+	padding-top: 200px;
+	h1 {
+		font-family: 'Oswald', Arial, sans-serif;
+		text-transform: uppercase;
+		font-size: 20em;
+		span {
+			color: $blue;
+		}
 	}
 	p {
 		color: #fff;
+		.btn {
+			margin-top: 10px;
+			background: none;
+			border: 1px solid #fff;
+			margin-left: 5px;
+			&:hover {
+				background: #fff;
+			}
+			i {
+				font-size: 1.25em;
+				position: relative;
+				top: 1px;
+				left: 2px;
+			}
+		}
 	}
-	i {
+	.continue {
 		margin-top: 60px;
 		background: #222;
 		padding: 15px 13px 13px 15px;
 		border-radius: 50%;
+	}
+}
+
+#what-we-do {
+	.row {
+		.fa {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 8em;
+		}
 	}
 }
 
@@ -179,7 +223,7 @@ footer {
 	}
 	.carousel {
 		position: absolute;
-		top: 150px;
+		top: 190px;
 		margin-left: 50%;
 		left: -342px;
 		z-index: 2;
@@ -187,51 +231,24 @@ footer {
 }
 
 #home-mobile-ready {
-	padding-bottom: 0;
+	background-color: #000;
+	background: none;
+	background-size: 100%;
+	background-position: 50%;
+	h3 {
+		text-align: left;
+	}
+	.btn {
+		position: relative;
+		top: 40px;
+	}
+}
+
+#home-testimonials {
 	img {
-		margin: auto;
-		margin-top: 40px;
-	}
-}
-
-#home-optimization {
-	padding-bottom: 0;
-	img {
-		margin: auto;
-	}
-}
-
-#home-maintenance {
-	.row {
-		margin-top: 40px;
-		margin-bottom: 40px;
-	}
-	.col-md-3 {
-		text-align: center;
-		i {
-			font-size: 7em;
-			color: #333;
-			padding: 20px;
-		}
-	}
-}
-
-#home-contact {
-	text-align: center;
-	.contact-modal {
-		margin-top: 40px;
-	}
-	.modal-content {
-		background: #222;
-		.modal-header {
-			border: none;
-			h4 {
-				font-weight: 700;
-			}
-		}
-		.modal-footer {
-			border: none;
-		}
+		border-radius: 50%;
+		margin-top: 20px;
+		margin-bottom: 20px;
 	}
 }
 

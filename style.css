@@ -1,5 +1,5 @@
 body {
-  background: #222;
+  background: #111;
   color: #fff;
   font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: 400;
@@ -51,7 +51,7 @@ section {
     position: relative; }
 
 footer {
-  background: #337ab7;
+  background: #4c80c5;
   padding-top: 40px;
   padding-bottom: 40px;
   color: #ddd; }
@@ -68,7 +68,10 @@ footer {
     text-align: center; }
 
 .inverse {
-  background: #000; }
+  background: #f2f2f2;
+  color: #333; }
+  .inverse .bar {
+    background: #333; }
 
 .navbar {
   position: fixed;
@@ -90,15 +93,22 @@ footer {
   color: #fff;
   font-weight: 700; }
 
+.bar {
+  display: block;
+  height: 4px;
+  width: 75px;
+  background-color: #fff;
+  margin: 20px auto; }
+
 .btn-primary, .btn-default {
-  border-radius: 0;
-  border: 1px solid #fff;
-  border-color: #fff;
+  border-radius: 20px;
+  color: #fff;
   padding: 10px 20px;
-  font-size: 2em;
-  background: none;
+  background: #4c80c5;
   transition: all .2s ease;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+  font-weight: 900;
+  text-transform: uppercase; }
   .btn-primary:hover, .btn-primary:focus, .btn-default:hover, .btn-default:focus {
     background-color: #fff;
     border-color: #fff;
@@ -114,9 +124,9 @@ footer {
   #page-head h1, #page-head p {
     text-shadow: 0 1px 3px #000; }
 
-.affiliations .row {
+#affiliations .row {
   margin-top: 60px; }
-.affiliations img {
+#affiliations img {
   max-height: 150px;
   margin: auto; }
 
@@ -126,16 +136,37 @@ footer {
   background-size: 100%;
   background-position: 50%;
   min-height: 800px;
-  padding-top: 320px; }
-  #intro h1, #intro p {
-    text-shadow: 0 1px 3px #000; }
+  padding-top: 200px; }
+  #intro h1 {
+    font-family: 'Oswald', Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20em; }
+    #intro h1 span {
+      color: #4c80c5; }
   #intro p {
     color: #fff; }
-  #intro i {
+    #intro p .btn {
+      margin-top: 10px;
+      background: none;
+      border: 1px solid #fff;
+      margin-left: 5px; }
+      #intro p .btn:hover {
+        background: #fff; }
+      #intro p .btn i {
+        font-size: 1.25em;
+        position: relative;
+        top: 1px;
+        left: 2px; }
+  #intro .continue {
     margin-top: 60px;
     background: #222;
     padding: 15px 13px 13px 15px;
     border-radius: 50%; }
+
+#what-we-do .row .fa {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 8em; }
 
 #home-graphics .desktop {
   position: relative;
@@ -143,44 +174,26 @@ footer {
   margin: auto; }
 #home-graphics .carousel {
   position: absolute;
-  top: 150px;
+  top: 190px;
   margin-left: 50%;
   left: -342px;
   z-index: 2; }
 
 #home-mobile-ready {
-  padding-bottom: 0; }
-  #home-mobile-ready img {
-    margin: auto;
-    margin-top: 40px; }
+  background-color: #000;
+  background: none;
+  background-size: 100%;
+  background-position: 50%; }
+  #home-mobile-ready h3 {
+    text-align: left; }
+  #home-mobile-ready .btn {
+    position: relative;
+    top: 40px; }
 
-#home-optimization {
-  padding-bottom: 0; }
-  #home-optimization img {
-    margin: auto; }
-
-#home-maintenance .row {
-  margin-top: 40px;
-  margin-bottom: 40px; }
-#home-maintenance .col-md-3 {
-  text-align: center; }
-  #home-maintenance .col-md-3 i {
-    font-size: 7em;
-    color: #333;
-    padding: 20px; }
-
-#home-contact {
-  text-align: center; }
-  #home-contact .contact-modal {
-    margin-top: 40px; }
-  #home-contact .modal-content {
-    background: #222; }
-    #home-contact .modal-content .modal-header {
-      border: none; }
-      #home-contact .modal-content .modal-header h4 {
-        font-weight: 700; }
-    #home-contact .modal-content .modal-footer {
-      border: none; }
+#home-testimonials img {
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /* Portfolio Page */
 #portfolio #portfolio-grid {
