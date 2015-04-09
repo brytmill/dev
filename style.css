@@ -190,10 +190,19 @@ footer {
     position: relative;
     top: 40px; }
 
+#home-testimonials .carousel-caption {
+  position: relative;
+  right: initial;
+  bottom: initial;
+  left: initial;
+  z-index: 10;
+  padding: 0; }
 #home-testimonials img {
   border-radius: 50%;
   margin-top: 20px;
   margin-bottom: 20px; }
+#home-testimonials .carousel {
+  margin-bottom: 40px; }
 
 /* Portfolio Page */
 #portfolio #portfolio-grid {
