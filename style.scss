@@ -494,6 +494,7 @@ footer {
 
 @media screen and ( max-width: 503px ) {
 	#intro {
+		padding-top: 80px;
 		h1 {
 			font-size: 8em;
 			font-weight: normal;
@@ -508,5 +509,8 @@ footer {
 				margin-right: 5px;
 			}
 		}
+	}
+	#home-mobile-ready .btn {
+		top: 20px;
 	}
 }

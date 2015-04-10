@@ -364,15 +364,20 @@ footer {
   .navbar .navbar-brand {
     display: inline-block; } }
 @media screen and (max-width: 503px) {
-  #intro h1 {
-    font-size: 8em;
-    font-weight: normal; }
+  #intro {
+    padding-top: 80px; }
+    #intro h1 {
+      font-size: 8em;
+      font-weight: normal; }
 
   #portfolio #portfolio-grid {
     padding-top: 0; }
     #portfolio #portfolio-grid button {
       padding: 10px 15px;
       font-size: 3em;
-      margin-right: 5px; } }
+      margin-right: 5px; }
+
+  #home-mobile-ready .btn {
+    top: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
