@@ -123,18 +123,30 @@ footer {
   margin: 20px auto; }
 
 .btn-primary, .btn-default {
-  border-radius: 20px;
+  border-radius: 5px;
   color: #fff;
-  padding: 10px 20px;
+  padding: 10px 30px;
   background: #4c80c5;
-  transition: all .2s ease;
   margin-bottom: 5px;
   font-weight: 900;
-  text-transform: uppercase; }
-  .btn-primary:hover, .btn-primary:focus, .btn-default:hover, .btn-default:focus {
-    background-color: #fff;
-    border-color: #fff;
-    color: #333; }
+  text-transform: uppercase;
+  position: relative;
+  left: 0; }
+  .btn-primary i, .btn-default i {
+    opacity: 0;
+    transition: opacity .2s ease;
+    font-size: 1.25em;
+    position: relative;
+    top: 1px;
+    left: 2px; }
+  .btn-primary span, .btn-default span {
+    position: relative;
+    left: 5px;
+    transition: left .2s linear; }
+  .btn-primary:hover > span, .btn-default:hover > span {
+    left: -5px; }
+  .btn-primary:hover > i, .btn-default:hover > i {
+    opacity: 1; }
 
 #page-head {
   background: none;
@@ -193,13 +205,6 @@ footer {
       background: none;
       border: 1px solid #fff;
       margin-left: 5px; }
-      #intro p .btn:hover {
-        background: #fff; }
-      #intro p .btn i {
-        font-size: 1.25em;
-        position: relative;
-        top: 1px;
-        left: 2px; }
   #intro .continue {
     margin-top: 60px;
     background: #222;
@@ -236,6 +241,9 @@ footer {
 /* Portfolio Page */
 #portfolio #portfolio-grid {
   padding-top: 40px; }
+  #portfolio #portfolio-grid .btn-primary i, #portfolio #portfolio-grid .btn-default i {
+    opacity: 1;
+    left: 0; }
   #portfolio #portfolio-grid button {
     background: none;
     border: 1px solid #666;
@@ -268,17 +276,19 @@ footer {
       z-index: 999;
       top: 90px;
       left: 170px;
-      background: #4c80c5;
+      background: #333;
       padding: 20px 18px 18px 20px;
       border-radius: 50%;
       font-size: 3em; }
       #portfolio #portfolio-grid figure i:hover {
-        background: #739bd1; }
+        background: #4d4d4d; }
     #portfolio #portfolio-grid figure a {
-      opacity: 0;
-      transition: opacity .2s ease; }
+      transition: top .2s ease;
+      position: relative;
+      top: -200px;
+      left: -195px; }
     #portfolio #portfolio-grid figure:hover > a {
-      opacity: 1; }
+      top: 30px; }
     #portfolio #portfolio-grid figure:hover > img {
       opacity: 0.8; }
   #portfolio #portfolio-grid .active {

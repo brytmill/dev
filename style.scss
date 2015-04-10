@@ -153,18 +153,35 @@ footer {
 }
 
 .btn-primary, .btn-default {
-	border-radius: 20px;
+	border-radius: 5px;
 	color: #fff;
-	padding: 10px 20px;
+	padding: 10px 30px;
 	background: $blue;
-	transition: all .2s ease;
 	margin-bottom: 5px;
 	font-weight: 900;
 	text-transform: uppercase;
+	position: relative;
+	left: 0;
 	&:hover, &:focus {
-		background-color: #fff;
-		border-color: #fff;
-		color: #333;
+	}
+	i {
+		opacity: 0;
+		transition: opacity .2s ease;
+		font-size: 1.25em;
+		position: relative;
+		top: 1px;
+		left: 2px;
+	}
+	span {
+		position: relative;
+		left: 5px;
+		transition: left .2s linear;
+	}
+	&:hover > span {
+		left: -5px;
+	}
+	&:hover > i {
+		opacity: 1;
 	}
 }
 
@@ -242,14 +259,7 @@ footer {
 			background: none;
 			border: 1px solid #fff;
 			margin-left: 5px;
-			&:hover {
-				background: #fff;
-			}
 			i {
-				font-size: 1.25em;
-				position: relative;
-				top: 1px;
-				left: 2px;
 			}
 		}
 	}
@@ -305,6 +315,12 @@ footer {
 #portfolio {
 	#portfolio-grid {
 		padding-top: 40px;
+		.btn-primary, .btn-default {
+			i {
+				opacity: 1;
+				left: 0;
+			}
+		}
 		button {
 			background: none;
 			border: 1px solid #666;
@@ -343,20 +359,22 @@ footer {
 				z-index: 999;
 				top: 90px;
 				left: 170px;
-				background: $blue;
+				background: #333;
 				padding: 20px 18px 18px 20px;
 				border-radius: 50%;
 				font-size: 3em;
 				&:hover {
-					background: lighten($blue,10%);
+					background: lighten(#333,10%);
 				}
 			}
 			a {
-				opacity: 0;
-				transition: opacity .2s ease;
+				transition: top .2s ease;
+				position: relative;
+				top: -200px;
+				left: -195px;
 			}
 			&:hover > a {
-				opacity: 1;
+				top: 30px;
 			}
 			&:hover > img {
 				opacity: 0.8;
