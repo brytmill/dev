@@ -6,12 +6,13 @@
 	<meta name="robots" content="nofollow, noindex">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
 
 	<script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
 	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 
-	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
 	<link rel="stylesheet" href="style.css">
 	<script src="scripts.js"></script>
@@ -29,6 +30,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 		      </button>
+			<a class="navbar-brand" href="#">BRYT<span>DESIGNS</span>.COM</a>
 		    </div>
 
 		    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,95 +61,144 @@
 	<section id="portfolio-grid">
 		<div class="container">
 			<div class="filter-options">
-	          <button class="active" data-group="all">All</button>
-	          <button class="" data-group="web-design">Web Design</button>
-	          <button class="" data-group="e-commerce">E-Commerce</button>
-	          <button class="" data-group="graphic-design">Graphic Design</button>
-	          <button class="" data-group="email">Email</button>
+	          <button class="btn btn-primary active" data-group="all" data-toggle="tooltip" data-placement="top" title="All"><i class="glyphicon glyphicon-repeat"></i></button>
+	          <button class="btn btn-primary" data-group="web-design" data-toggle="tooltip" data-placement="top" title="Web Design"><i class="fa fa-globe"></i></button>
+	          <button class="btn btn-primary" data-group="eCommerce" data-toggle="tooltip" data-placement="top" title="eCommerce"><i class="fa fa-shopping-cart"></i></button>
+	          <button class="btn btn-primary" data-group="graphic-design" data-toggle="tooltip" data-placement="top" title="Graphic Design"><i class="fa fa-cube"></i></button>
+	          <button class="btn btn-primary" data-group="email" data-toggle="tooltip" data-placement="top" title="Email Design"><i class="fa fa-envelope"></i></button>
 	        </div>
 				<div class="row" id="grid">
-				  <figure class="col-md-4 picture-item" data-groups='["e-commerce"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-okp.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption>O'Kelly Pacific<br/><em>Web Design, E-Commerce</em></figcaption>
+				      <figcaption class="picture-item__title">O'Kelly Pacific<br/><em>Web Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["web-design","email"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-ecfitness.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Eric Cooper Fitness<br/><em>Web Design, Email</em></figcaption>
+				      <figcaption class="picture-item__title">Eric Cooper Fitness<br/><em>Web Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["web-design","email"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["graphic-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-metricmethod.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Madasen McGrath<br/><em>Web Design, Email</em></figcaption>
+				      <figcaption class="picture-item__title">Metric Method<br/><em>Graphic Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["graphic-design","email"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["email"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-sophiasilva.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Shelter Mortgage Partnerships<br/><em>Graphic Design, Email</em></figcaption>
+				      <figcaption class="picture-item__title">Sophia Silva<br/><em>Email</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["e-commerce"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["graphic-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-okp-bienvenido.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Chenim USA<br/><em>E-Commerce</em></figcaption>
-				    </div>
-				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["web-design","email"]'>
-				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
-				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Florals &amp; Events<br/><em>Web Design, Email</em></figcaption>
-				    </div>
-				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["web-design","e-commerce"]'>
-				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
-				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Dermovia<br/><em>Web Design, E-Commerce</em></figcaption>
+				      <figcaption class="picture-item__title">O'Kelly Pacific<br/><em>Graphic Design</em></figcaption>
 				    </div>
 				  </figure>
 				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["graphic-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-infusion-water.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Graphic Design</figcaption>
+				      <figcaption class="picture-item__title">Infusion Lounge<br/><em>Graphic Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["e-commerce"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-madasen.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">E-Commerce</figcaption>
+				      <figcaption class="picture-item__title">Madasen McGrath<br/><em>Web Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["web-design","email"]'>
+				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["web-design"'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-sheltermortgage.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Web Design, Email</figcaption>
+				      <figcaption class="picture-item__title">Shelter Mortgage Partnerships<br/><em>Web Design</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item" data-groups='["e-commerce","graphic-design"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design", "eCommerce"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-scandiadecor.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">E-Commerce, Graphic Design</figcaption>
+				      <figcaption class="picture-item__title">Scandia Decor<br/><em>Web Design, eCommerce</em></figcaption>
 				    </div>
 				  </figure>
-				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["graphic-design"]'>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["graphic-design"]'>
 				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
-				    <img src="http://psdstyle.net/wp-content/uploads/2010/11/firefox-browser-template_lg1.jpg" class="img-responsive"height="155" width="390" />
+				    <img src="images/p-okp-cards.jpg" class="img-responsive"height="155" width="390" />
 				    <div class="picture-item__details">
-				      <figcaption class="picture-item__title">Graphic Design</figcaption>
+				      <figcaption class="picture-item__title">O'Kelly Pacific<br/><em>Graphic Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-floralsandevents.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">Florals &amp; Events<br/><em>Web Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["web-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-caileen.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">Caileen Designs<br/><em>Web Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design","eCommerce"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-ecfp.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">ECF Performance<br/><em>Web Design, eCommerce</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["graphic-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-okp-mayo.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">O'Kelly Pacific<br/><em>Graphic Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-ecosystm.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">ECO-SYSTM<br/><em>Web Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["email"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-rae-newsletter.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">RAE Studios<br/><em>Email</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item picture-item--h2" data-groups='["web-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-bcc.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">Beach Cities Capital<br/><em>Web Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-rae.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">RAE Agency<br/><em>Web Design</em></figcaption>
+				    </div>
+				  </figure>
+				  <figure class="col-md-4 picture-item img-responsive" data-groups='["web-design","eCommerce"]'>
+				  	<a href=""><i class="glyphicon glyphicon-plus"></i></a>
+				    <img src="images/p-treedpanels.jpg" class="img-responsive"height="155" width="390" />
+				    <div class="picture-item__details">
+				      <figcaption class="picture-item__title">TreeD Panels<br/><em>Web Design, eCommerce</em></figcaption>
 				    </div>
 				  </figure>
 				</div>

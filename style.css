@@ -1,5 +1,5 @@
 body {
-  background: #111;
+  background: #333;
   color: #fff;
   font-family: 'Open Sans', helvetica, sans-serif;
   font-weight: 400;
@@ -81,13 +81,35 @@ footer {
   background: #fff;
   border: none; }
   .navbar a {
+    font-family: 'Oswald', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 2em;
     background: #fff;
     color: #000;
     transition: all .33s ease; }
     .navbar a:hover {
-      background: #000 !important;
+      background: #333 !important;
       color: #fff !important; }
+  .navbar .navbar-toggle {
+    border: none; }
+    .navbar .navbar-toggle:hover, .navbar .navbar-toggle:focus {
+      background: none; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #4c80c5;
+      height: 4px;
+      width: 30px; }
+  .navbar .navbar-brand {
+    display: none;
+    color: #4c80c5;
+    font-size: 3em;
+    position: relative;
+    top: 2px;
+    letter-spacing: initial; }
+    .navbar .navbar-brand span {
+      color: #2a4f81; }
+    .navbar .navbar-brand:hover, .navbar .navbar-brand:focus {
+      background: none !important;
+      color: #4c80c5 !important; }
 
 .more {
   color: #fff;
@@ -126,9 +148,30 @@ footer {
 
 #affiliations .row {
   margin-top: 60px; }
+  #affiliations .row .col-md-3 {
+    margin-bottom: 40px; }
 #affiliations img {
   max-height: 150px;
   margin: auto; }
+
+.testimonials .carousel-caption {
+  position: relative;
+  right: initial;
+  bottom: initial;
+  left: initial;
+  z-index: 10;
+  padding: 0;
+  text-shadow: none; }
+  .testimonials .carousel-caption a {
+    color: #4c80c5; }
+.testimonials img {
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100px;
+  height: 100px; }
+.testimonials .carousel {
+  margin-bottom: 40px; }
 
 /* Home Page */
 #intro {
@@ -190,32 +233,21 @@ footer {
     position: relative;
     top: 40px; }
 
-#home-testimonials .carousel-caption {
-  position: relative;
-  right: initial;
-  bottom: initial;
-  left: initial;
-  z-index: 10;
-  padding: 0; }
-#home-testimonials img {
-  border-radius: 50%;
-  margin-top: 20px;
-  margin-bottom: 20px; }
-#home-testimonials .carousel {
-  margin-bottom: 40px; }
-
 /* Portfolio Page */
 #portfolio #portfolio-grid {
   padding-top: 40px; }
   #portfolio #portfolio-grid button {
     background: none;
-    border: 1px solid #fff;
+    border: 1px solid #666;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 2em;
+    padding: 10px 15px;
+    font-size: 3em;
     margin-right: 10px;
     transition: background-color .2s ease;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    border-radius: 50%; }
+    #portfolio #portfolio-grid button:first-child {
+      font-size: 2.5em; }
     #portfolio #portfolio-grid button:hover {
       background: #fff;
       color: #333; }
@@ -223,29 +255,32 @@ footer {
     overflow: hidden;
     margin-bottom: 40px;
     position: relative; }
+    #portfolio #portfolio-grid figure img {
+      border-radius: 5px; }
     #portfolio #portfolio-grid figure figcaption {
       font-size: 2em; }
       #portfolio #portfolio-grid figure figcaption em {
         font-size: 0.75em;
         font-weight: 300; }
     #portfolio #portfolio-grid figure i {
-      padding: 10px;
       color: #fff;
       position: absolute;
       z-index: 999;
-      top: 60px;
-      left: 120px;
-      background: #333;
-      padding: 17px 15px 15px 17px;
+      top: 90px;
+      left: 170px;
+      background: #4c80c5;
+      padding: 20px 18px 18px 20px;
       border-radius: 50%;
       font-size: 3em; }
       #portfolio #portfolio-grid figure i:hover {
-        background: #444; }
+        background: #739bd1; }
     #portfolio #portfolio-grid figure a {
       opacity: 0;
       transition: opacity .2s ease; }
     #portfolio #portfolio-grid figure:hover > a {
       opacity: 1; }
+    #portfolio #portfolio-grid figure:hover > img {
+      opacity: 0.8; }
   #portfolio #portfolio-grid .active {
     background: #fff;
     color: #333; }
@@ -309,5 +344,35 @@ footer {
   padding: 0;
   max-width: 360px;
   margin-right: 45px; }
+
+@media screen and (max-width: 991px) {
+  #intro h1 {
+    font-size: 15em; }
+
+  #home-graphics .desktop {
+    display: none; }
+  #home-graphics .carousel {
+    position: relative;
+    top: initial;
+    margin: 40px 0 40px 0;
+    left: initial; } }
+@media screen and (max-width: 767px) {
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+
+  .navbar .navbar-brand {
+    display: inline-block; } }
+@media screen and (max-width: 503px) {
+  #intro h1 {
+    font-size: 8em;
+    font-weight: normal; }
+
+  #portfolio #portfolio-grid {
+    padding-top: 0; }
+    #portfolio #portfolio-grid button {
+      padding: 10px 15px;
+      font-size: 3em;
+      margin-right: 5px; } }
 
 /*# sourceMappingURL=style.css.map */

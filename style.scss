@@ -1,7 +1,7 @@
 $blue: #4c80c5;
 
 body {
-	background: #111;
+	background: #333;
 	color: #fff;
 	font-family: 'Open Sans', helvetica, sans-serif;
 	font-weight: 400;
@@ -100,13 +100,41 @@ footer {
 	background: #fff;
 	border: none;
 	a {
+		font-family: 'Oswald', Helvetica, Arial, sans-serif;
+		text-transform: uppercase;
 		font-size: 2em;
 		background: #fff;
 		color: #000;
 		transition: all .33s ease;
 		&:hover {
-			background: #000 !important;
+			background: #333 !important;
 			color: #fff !important;
+		}
+	}
+	.navbar-toggle {
+		border: none;
+		&:hover, &:focus {
+			background: none;
+		}
+		.icon-bar {
+			background-color: $blue;
+			height: 4px;
+			width: 30px;
+		}
+	}
+	.navbar-brand {
+		display: none;
+		color: $blue;
+		font-size: 3em;
+		position: relative;
+		top: 2px;
+		letter-spacing: initial;
+		span {
+			color: darken($blue,20%);
+		}
+		&:hover, &:focus {
+			background: none !important;
+			color: $blue !important;
 		}
 	}
 }
@@ -156,10 +184,38 @@ footer {
 #affiliations {
 	.row {
 		margin-top: 60px;
+		.col-md-3 {
+			margin-bottom: 40px;
+		}
 	}
 	img {
 		max-height: 150px;
 		margin: auto;
+	}
+}
+
+.testimonials {
+	.carousel-caption {
+		position: relative;
+		right: initial;
+		bottom: initial;
+		left: initial;
+		z-index: 10;
+		padding: 0;
+		text-shadow: none;
+		a {
+			color: $blue;
+		}
+	}
+	img {
+		border-radius: 50%;
+		margin-top: 20px;
+		margin-bottom: 20px;
+		width: 100px;
+		height: 100px;
+	}
+	.carousel {
+		margin-bottom: 40px;
 	}
 }
 
@@ -244,25 +300,6 @@ footer {
 	}
 }
 
-#home-testimonials {
-	.carousel-caption {
-		position: relative;
-		right: initial;
-		bottom: initial;
-		left: initial;
-		z-index: 10;
-		padding: 0;
-	}
-	img {
-		border-radius: 50%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-	}
-	.carousel {
-		margin-bottom: 40px;
-	}
-}
-
 /* Portfolio Page */
 
 #portfolio {
@@ -270,13 +307,17 @@ footer {
 		padding-top: 40px;
 		button {
 			background: none;
-			border: 1px solid #fff;
+			border: 1px solid #666;
 			color: #fff;
-			padding: 10px 20px;
-			font-size: 2em;
+			padding: 10px 15px;
+			font-size: 3em;
 			margin-right: 10px;
 			transition: background-color .2s ease;
 			margin-bottom: 5px;
+			border-radius: 50%;
+			&:first-child {
+				font-size: 2.5em;
+			}
 			&:hover {
 				background: #fff;
 				color: #333;
@@ -286,6 +327,9 @@ footer {
 			overflow: hidden;
 			margin-bottom: 40px;
 			position: relative;
+			img {
+				border-radius: 5px;
+			}
 			figcaption {
 				font-size: 2em;
 				em {
@@ -294,18 +338,17 @@ footer {
 				}
 			}
 			i {
-				padding: 10px;
 				color: #fff;
 				position: absolute;
 				z-index: 999;
-				top: 60px;
-				left: 120px;
-				background: #333;
-				padding: 17px 15px 15px 17px;
+				top: 90px;
+				left: 170px;
+				background: $blue;
+				padding: 20px 18px 18px 20px;
 				border-radius: 50%;
 				font-size: 3em;
 				&:hover {
-					background: #444;
+					background: lighten($blue,10%);
 				}
 			}
 			a {
@@ -314,6 +357,9 @@ footer {
 			}
 			&:hover > a {
 				opacity: 1;
+			}
+			&:hover > img {
+				opacity: 0.8;
 			}
 		}
 		.active {
@@ -410,6 +456,57 @@ footer {
 			padding: 0;
 			max-width: 360px;
 			margin-right: 45px;
+		}
+	}
+}
+
+@media screen and ( max-width: 991px ) {
+	#intro {
+		h1 {
+			font-size: 15em;
+		}
+	}
+	#home-graphics {
+		.desktop {
+			display: none;
+		}
+		.carousel {
+			position: relative;;
+			top: initial;
+			margin: 40px 0 40px 0;
+			left: initial;
+		}
+	}
+}
+
+// mobile navbar starts here
+@media screen and ( max-width: 767px ) {
+	section {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.navbar {
+		.navbar-brand {
+			display: inline-block;
+		}
+	}
+}
+
+@media screen and ( max-width: 503px ) {
+	#intro {
+		h1 {
+			font-size: 8em;
+			font-weight: normal;
+		}
+	}
+	#portfolio {
+		#portfolio-grid {
+			padding-top: 0;
+			button {
+				padding: 10px 15px;
+				font-size: 3em;
+				margin-right: 5px;
+			}
 		}
 	}
 }

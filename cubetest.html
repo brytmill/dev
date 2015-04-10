@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Test</title>
+
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+	body {
+		background: #ffffff; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, #ffffff 49%, #dddddd 98%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(49%,#ffffff), color-stop(98%,#dddddd)); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, #ffffff 49%,#dddddd 98%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, #ffffff 49%,#dddddd 98%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover, #ffffff 49%,#dddddd 98%); /* IE10+ */
+background: radial-gradient(ellipse at center, #ffffff 49%,#dddddd 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#dddddd',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+		}
+	#experiment {
+	  -webkit-perspective: 800px;
+	  -webkit-perspective-origin: 50% 200px;
+	  -moz-perspective: 800px;
+	  -moz-perspective-origin: 50% 200px;
+	  perspective: 800px;
+	  perspective-origin: 50% 200px;
+	}
+
+	#cube {
+	  position: relative;
+	  margin: 100px auto;
+	  height: 400px;
+	  width: 400px;
+	  -webkit-transition: -webkit-transform 2s linear;
+	  -webkit-transform-style: preserve-3d;
+	  -moz-transition: -moz-transform 2s linear;
+	  -moz-transform-style: preserve-3d;
+	  transition: transform 2s linear;
+	  transform-style: preserve-3d;
+	}
+
+	.face {
+	  position: absolute;
+	  height: 360px;
+	  width: 360px;
+	  padding: 20px;
+	  background-color: rgba(255, 255, 255, 0.6);
+	  font-size: 27px;
+	  line-height: 1em;
+	  color: #fff;
+	  border: 1px solid #999;
+	  border-radius: 3px;
+	}
+
+	#cube .one  {
+		background: top left url('images/2.png');
+	  -webkit-transform: rotateX(90deg) translateZ(200px);
+	  -moz-transform: rotateX(90deg) translateZ(200px);
+	  transform: rotateX(90deg) translateZ(200px);
+	}
+
+	#cube .two {
+		background: top left url('images/1.png');
+	  -webkit-transform: translateZ(200px);
+	  -moz-transform: translateZ(200px);
+	  transform: translateZ(200px);
+	}
+
+	#cube .three {
+		background: top left url('images/3.png');
+	  -webkit-transform: rotateY(90deg) translateZ(200px);
+	  -moz-transform: rotateY(90deg) translateZ(200px);
+	  transform: rotateY(90deg) translateZ(200px);
+	}
+
+	#cube .four {
+		background: #777777; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #777777 0%, #333333 99%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#777777), color-stop(99%,#333333)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #777777 0%,#333333 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	  -webkit-transform: rotateY(180deg) translateZ(200px);
+	  -moz-transform: rotateY(180deg) translateZ(200px);
+	  transform: rotateY(180deg) translateZ(200px);
+	}
+
+	#cube .five {
+		background: #777777; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #777777 0%, #333333 99%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#777777), color-stop(99%,#333333)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #777777 0%,#333333 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	  -webkit-transform: rotateY(-90deg) translateZ(200px);
+	  -moz-transform: rotateY(-90deg) translateZ(200px);
+	  transform: rotateY(-90deg) translateZ(200px);
+	}
+
+	#cube .six {
+		background: #777777; /* Old browsers */
+	background: -moz-radial-gradient(center, ellipse cover, #777777 0%, #333333 99%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#777777), color-stop(99%,#333333)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover, #777777 0%,#333333 99%); /* IE10+ */
+	background: radial-gradient(ellipse at center, #777777 0%,#333333 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#777777', endColorstr='#333333',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	  -webkit-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+	  -moz-transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+	  transform: rotateX(-90deg) rotate(180deg) translateZ(200px);
+	}
+	a {
+		color: #4c80c5;
+		letter-spacing: -1px;
+		text-decoration: none;
+		font-weight: bold;
+	}
+	a:hover {
+		color: #4c80c5;
+	}
+	p {
+		letter-spacing: -1px;
+	}
+	</style>
+
+	<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+</head>
+<body style="text-align: center;">
+	<h1 style="color: #333; font-size: 5em; letter-spacing: -2px;"><a href="http://brytdesigns.com"><span style="color: #4c80c5;">BRYTDESIGNS.COM</span></a> HAPPY FUN ZONE</h1>
+	<h2 style="color: #333;">"THE CUBE"</h2>
+	<p>Use <i class="fa fa-caret-square-o-left"></i>, <i class="fa fa-caret-square-o-right"></i>, <i class="fa fa-caret-square-o-up"></i>, <i class="fa fa-caret-square-o-down"></i> to rotate the cube!</p>
+	<div id="experiment">
+	  <div id="cube">
+	    <div class="face one">
+	    </div>
+	    <div class="face two">
+	    </div>
+	    <div class="face three">
+	    </div>
+	    <div class="face four">
+	    </div>
+	    <div class="face five">
+	    </div>
+	    <div class="face six">
+	    </div>
+	  </div>
+	</div>
+	<p>This uses css animations and javacsript to detect keypresses and rotate the cube!</p>
+	<p>See the <a href="http://paulrhayes.com/2009-07/animated-css3-cube-interface-using-3d-transforms/">full documentation here</a>.</p>
+
+
+	<script>
+	var props = 'transform WebkitTransform MozTransform OTransform msTransform'.split(' '),
+    prop,
+    el = document.createElement('div');
+
+	for(var i = 0, l = props.length; i < l; i++) {
+	    if(typeof el.style[props[i]] !== "undefined") {
+	        prop = props[i];
+	        break;
+	    }
+	}
+
+	var xAngle = 0, yAngle = 0;
+	$('body').keydown(function(evt) {
+	    switch(evt.keyCode) {
+	        case 37: // left
+	            yAngle -= 90;
+	            break;
+
+	        case 38: // up
+	            xAngle += 90;
+	            evt.preventDefault();
+	            break;
+
+	        case 39: // right
+	            yAngle += 90;
+	            break;
+
+	        case 40: // down
+	            xAngle -= 90;
+	            evt.preventDefault();
+	            break;
+	    };
+	    document.getElementById('cube').style[prop] = "rotateX("+xAngle+"deg) rotateY("+yAngle+"deg)";
+	});
+	</script>
+
+</body>
+</html>
