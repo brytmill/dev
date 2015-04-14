@@ -325,7 +325,7 @@ footer {
 			background: none;
 			border: 1px solid #666;
 			color: #fff;
-			padding: 10px 15px;
+			padding: 10px 12px;
 			font-size: 3em;
 			margin-right: 10px;
 			transition: background-color .2s ease;
@@ -478,6 +478,15 @@ footer {
 	}
 }
 
+@media screen and ( max-width: 1300px ) {
+	#about {
+		.founder {
+			background-size: auto 100%;
+			background-position: top left;
+		}
+	}
+}
+
 @media screen and ( max-width: 991px ) {
 	#intro {
 		h1 {
@@ -522,7 +531,7 @@ footer {
 		#portfolio-grid {
 			padding-top: 0;
 			button {
-				padding: 10px 15px;
+				padding: 10px 12px;
 				font-size: 3em;
 				margin-right: 5px;
 			}
