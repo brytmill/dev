@@ -1,0 +1,93 @@
+.animated-icon {
+    background: none;
+    border: 1px solid #555;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 40px auto;
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    &:hover {
+        background: #f2f2f2;
+        color: #333;
+    }
+}
+
+.comp i {
+    -webkit-animation-play-state: initial;
+    font-size: 10em !important;
+    margin-top: 17px !important;
+}
+
+.comp:hover i {
+    -webkit-animation: rotatePhone 3s infinite linear;
+    -webkit-animation-play-state: running;
+}
+
+.cube i {
+    -webkit-animation-play-state: initial;
+    padding: 2px 0 0 5px;
+}
+
+.cube:hover i {
+    -webkit-animation: flipCoin 2s infinite linear;
+    -webkit-animation-play-state: running;
+}
+
+#gears {
+    position: relative;
+    display: block;
+    margin: auto;
+    height: 70px;
+    width: 125px;
+}
+
+.cog {
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 37px;
+    left: 21px;
+    background: url(images/gear.png);
+    -webkit-animation: barrelRoll 2s infinite linear;
+    -webkit-animation-play-state: paused;
+}
+
+.cog-about {
+    -webkit-animation-play-state: running;
+}
+
+.cog:last-of-type {
+    top: 29px;
+    left: 47px;
+    -webkit-animation-name: invertBarrelRoll;
+}
+
+.cogs:hover .cog {
+    background: url(images/gear-blk.png);
+    -webkit-animation-play-state: running;
+}
+
+@-webkit-keyframes barrelRoll {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes invertBarrelRoll {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(-360deg); }
+}
+
+@-webkit-keyframes flipCoin {
+    0% { -webkit-transform: rotateY(0deg); }
+    100% { -webkit-transform: rotateY(360deg); }
+}
+
+@-webkit-keyframes rotatePhone {
+    0% { -webkit-transform: rotate(0deg); }
+    25% { -webkit-transform: rotate(90deg); }
+    50% { -webkit-transform: rotate(90deg); }
+    75% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(0deg); }
+}

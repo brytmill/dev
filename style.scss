@@ -1,3 +1,6 @@
+@import 'bootstrap.css';
+@import 'fontawesome.css';
+
 $blue: #4c80c5;
 
 body {
@@ -66,11 +69,10 @@ footer {
 	background: $blue;
 	padding-top: 40px;
 	padding-bottom: 40px;
-	color: #ddd;
+	color: #fff;
 	ul {
 		text-align: center;
 		li {
-			padding: 5px;
 			font-size: 2em;
 			&:first-child {
 				color: #fff;
@@ -81,6 +83,20 @@ footer {
 	}
 	.copy {
 		text-align: center;
+		img {
+			max-height: 50px;
+			margin-bottom: 0px;
+			margin-top: 40px;
+		}
+		p {
+			color: #fff;
+			font-size: 1.5em;
+		}
+	}
+	a {
+		font-weight: 300;
+		padding: 7px;
+		display:inline-block;
 	}
 }
 
@@ -174,7 +190,7 @@ footer {
 	}
 	span {
 		position: relative;
-		left: 5px;
+		left: 10px;
 		transition: left .2s linear;
 	}
 	&:hover > span {
@@ -419,11 +435,31 @@ footer {
 
 #about {
 	.company {
+		.row {
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+		i {
+			font-size: 12em;
+		}
+		.fa-long-arrow-right {
+			font-size: 6em;
+			position: relative;
+			top: 25px;
+			color: #666;
+		}
 	}
 	.founder {
 		background: #000 url('images/bryan-zion.png') top center no-repeat;
 		background-size: 100%;
 		min-height: 550px;
+		h1 {
+			margin-bottom: 40px;
+		}
+		img {
+			border-radius: 50%;
+			margin: auto;
+		}
 		p {
 			text-align: left;
 			margin-top: 40px;
@@ -478,66 +514,6 @@ footer {
 	}
 }
 
-@media screen and ( max-width: 1300px ) {
-	#about {
-		.founder {
-			background-size: auto 100%;
-			background-position: top left;
-		}
-	}
-}
-
-@media screen and ( max-width: 991px ) {
-	#intro {
-		h1 {
-			font-size: 15em;
-		}
-	}
-	#home-graphics {
-		.desktop {
-			display: none;
-		}
-		.carousel {
-			position: relative;;
-			top: initial;
-			margin: 40px 0 40px 0;
-			left: initial;
-		}
-	}
-}
-
-// mobile navbar starts here
-@media screen and ( max-width: 767px ) {
-	section {
-		padding-top: 40px;
-		padding-bottom: 40px;
-	}
-	.navbar {
-		.navbar-brand {
-			display: inline-block;
-		}
-	}
-}
-
-@media screen and ( max-width: 503px ) {
-	#intro {
-		padding-top: 80px;
-		h1 {
-			font-size: 8em;
-			font-weight: normal;
-		}
-	}
-	#portfolio {
-		#portfolio-grid {
-			padding-top: 0;
-			button {
-				padding: 10px 12px;
-				font-size: 3em;
-				margin-right: 5px;
-			}
-		}
-	}
-	#home-mobile-ready .btn {
-		top: 20px;
-	}
-}
+@import 'media';
+@import 'animations';
+@import 'bootstrap-add';

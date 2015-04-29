@@ -1,0 +1,46 @@
+@media screen and (max-width: 1300px) {
+  #about .founder {
+    background-size: auto 100%;
+    background-position: top left; } }
+@media screen and (max-width: 991px) {
+  #intro h1 {
+    font-size: 15em; }
+
+  #home-graphics .desktop {
+    display: none; }
+  #home-graphics .carousel {
+    position: relative;
+    top: initial;
+    margin: 40px 0 40px 0;
+    left: initial; }
+
+  .company .arrowz {
+    display: none; }
+  .company #gears {
+    margin-bottom: 30px;
+    left: 15px; } }
+@media screen and (max-width: 767px) {
+  section {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+
+  .navbar .navbar-brand {
+    display: inline-block; } }
+@media screen and (max-width: 503px) {
+  #intro {
+    padding-top: 80px; }
+    #intro h1 {
+      font-size: 8em;
+      font-weight: normal; }
+
+  #portfolio #portfolio-grid {
+    padding-top: 0; }
+    #portfolio #portfolio-grid button {
+      padding: 10px 12px;
+      font-size: 3em;
+      margin-right: 5px; }
+
+  #home-mobile-ready .btn {
+    top: 20px; } }
+
+/*# sourceMappingURL=media.css.map */
