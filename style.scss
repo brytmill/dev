@@ -55,8 +55,8 @@ a {
 }
 
 section {
-	padding-top: 80px;
-	padding-bottom: 80px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	position: relative;
 	background-color: #333;
 	.container {
@@ -169,7 +169,7 @@ footer {
 }
 
 .btn-primary, .btn-default {
-	border-radius: 5px;
+	border-radius: 0;
 	color: #fff;
 	padding: 10px 30px;
 	background: $blue;
@@ -246,9 +246,6 @@ footer {
 		margin-bottom: 20px;
 		width: 100px;
 		height: 100px;
-	}
-	.carousel {
-		margin-bottom: 40px;
 	}
 }
 
